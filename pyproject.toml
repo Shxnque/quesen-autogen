@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quesen-autogen"
+version = "0.1.0"
+description = "Official AutoGen (v0.4+) tool wrapper for Quesen — deterministic A2A risk validation for AutoGen agents."
+authors = [{ name = "Senueren Bureau" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["quesen", "autogen", "a2a", "agents", "risk"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+]
+dependencies = [
+  "quesen-sdk>=0.1.0",
+  "pydantic>=2.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/Shxnque/Quesen-sib"
+Source   = "https://github.com/Shxnque/quesen-autogen"
+
+[project.optional-dependencies]
+autogen04 = ["autogen-core>=0.4.0"]
+
+[tool.setuptools.packages.find]
+include = ["quesen_autogen*"]
