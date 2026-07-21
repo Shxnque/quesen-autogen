@@ -2,7 +2,7 @@
 
 > Deterministic A2A risk validation exposed as AutoGen (v0.4+) function tools.
 
-**Parent repo:** https://github.com/Shxnque/Quesen-sib
+**Developer portal:** https://senueren.co.za/quesen · **Source:** https://github.com/Shxnque/quesen
 
 ---
 
@@ -41,4 +41,4 @@ agent = AssistantAgent(
 
 Each is a plain async Python function with type-annotated arguments — AutoGen consumes those signatures directly.
 
-MIT license. Extracted from `Shxnque/Quesen-sib` `sdks/autogen/`.
+MIT license. See [`senueren.co.za/quesen`](https://senueren.co.za/quesen) for canonical documentation.
