@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Shxnque/Quesen-sib"
+Homepage = "https://senueren.co.za/quesen"
 Source   = "https://github.com/Shxnque/quesen-autogen"
 
 [project.optional-dependencies]
