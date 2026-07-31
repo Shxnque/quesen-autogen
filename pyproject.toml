@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quesen-autogen"
-version = "0.1.0"
+version = "0.2.0"
 description = "Official AutoGen (v0.4+) tool wrapper for Quesen — deterministic A2A risk validation for AutoGen agents."
 authors = [{ name = "Senueren Bureau" }]
 license = { text = "MIT" }
@@ -17,7 +17,7 @@ classifiers = [
   "Intended Audience :: Developers",
 ]
 dependencies = [
-  "quesen-sdk>=0.1.0",
+  "quesen-sdk>=0.2.0",
   "pydantic>=2.5",
 ]
 

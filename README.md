@@ -2,6 +2,7 @@
 
 > Deterministic A2A risk validation exposed as AutoGen (v0.4+) function tools.
 
+**Status:** v0.2.0 · tracks Quesen engine v1.10.0 · receipt provenance forwarded.
 **Developer portal:** https://senueren.co.za/quesen · **Source:** https://github.com/Shxnque/quesen
 
 ---
@@ -33,9 +34,19 @@ agent = AssistantAgent(
 )
 ```
 
+## Receipt provenance (v1.10)
+
+`quesen_validate(...)` returns the raw response dict from `AsyncQuesenClient`.
+Against a v1.10.0+ engine the dict includes:
+
+- `input_snapshot_hash` — SHA-256 over canonical request JSON.
+- `commit_sha` — git SHA of the engine ruleset live at decision time (or `"unknown"`).
+
+See the [public API reference](https://github.com/Shxnque/quesen/blob/main/docs/api-reference.md#receipt-provenance-v110).
+
 ## Tools shipped
 
-- `quesen_validate(...)` — wraps `/validate`
+- `quesen_validate(...)` — wraps `/validate` (carries v1.10 provenance)
 - `quesen_simulate(...)` — wraps `/simulate`
 - `quesen_report(...)` — wraps `/report` (v1.1 schema)
 
