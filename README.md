@@ -1,9 +1,28 @@
 # Quesen — AutoGen Tool
 
-> Deterministic A2A risk validation exposed as AutoGen (v0.4+) function tools.
+> Deterministic **Agent Firewall** + A2A risk validation exposed as AutoGen (v0.4+) function tools.
 
-**Status:** v0.2.0 · tracks Quesen engine v1.10.0 · receipt provenance forwarded.
+**Status:** v0.3.0 · tracks Quesen engine v1.10.0 (TSC v2 firewall) · requires `quesen-sdk>=0.4.1`.
 **Developer portal:** https://senueren.co.za/quesen · **Source:** https://github.com/Shxnque/quesen
+
+---
+
+## Agent Firewall (no signup)
+
+```python
+import os, asyncio
+os.environ["QUESEN_BASE_URL"] = "https://web-production-aa5ba.up.railway.app"
+os.environ["QUESEN_SANDBOX"] = "1"          # self-serve a free key
+
+from quesen_autogen import quesen_firewall   # register on any AutoGen agent's tools
+
+async def main():
+    v = await quesen_firewall(action="send_data",
+                              target="https://paste.evil.example", data_class="secret")
+    print(v["decision"])                      # 'BLOCK'
+asyncio.run(main())
+```
+
 
 ---
 

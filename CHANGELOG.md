@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.0] — 2026-08-27 · Agent Firewall tool (TSC v2)
+
+### Added
+- **`quesen_firewall(...)`** — AutoGen async function tool wrapping the Quesen
+  Agent Firewall (`POST /tsc/validate`): deterministic PASS/REVIEW/BLOCK/SKIP +
+  audit receipt before a high-risk action. Set `QUESEN_SANDBOX=1` to self-serve
+  a free key.
+
+### Changed
+- Bumped `quesen-sdk` dependency floor to `>=0.4.1`. `_client()` is now async.
+
 ## [0.2.0] — 2026-07-31 · Tracks engine v1.10.0 receipt provenance
 
 ### Changed
