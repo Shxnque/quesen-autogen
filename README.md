@@ -1,6 +1,6 @@
 # Quesen — AutoGen Tool
 
-> Deterministic **Agent Firewall** + A2A risk validation exposed as AutoGen (v0.4+) function tools.
+> Deterministic **AI agent authorization & governance** (a portable decision + authority + evidence layer) exposed as AutoGen (v0.4+) function tools — PASS/REVIEW/BLOCK/SKIP with reason codes + replayable receipts.
 
 **Status:** v0.3.0 · tracks Quesen engine v1.10.0 (TSC v2 firewall) · requires `quesen-sdk>=0.4.1`.
 **Developer portal:** https://senueren.co.za/quesen · **Source:** https://github.com/Shxnque/quesen
