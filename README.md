@@ -11,7 +11,7 @@
 
 ```python
 import os, asyncio
-os.environ["QUESEN_BASE_URL"] = "https://web-production-3df26.up.railway.app"
+os.environ["QUESEN_BASE_URL"] = "https://api.senueren.co.za"
 os.environ["QUESEN_SANDBOX"] = "1"          # self-serve a free key
 
 from quesen_autogen import quesen_firewall   # register on any AutoGen agent's tools
